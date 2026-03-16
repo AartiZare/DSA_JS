@@ -19,7 +19,7 @@ console.log(findMaxSumOfSubArray(arr));
 function maxSubArray(arr){
     let currentSum = arr[0];
     let maxSum = arr[0];
-    for(let i=0; i<arr.length; i++){
+    for(let i=1; i<arr.length; i++){
         currentSum = Math.max(arr[i], currentSum+arr[i]);
         maxSum = Math.max(maxSum, currentSum);
     }
